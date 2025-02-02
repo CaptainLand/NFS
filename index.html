@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFS Technology - 重塑人类存在方式</title>
+    <style>
+        :root {
+            --neon-blue: #00f3ff;
+            --cyber-purple: #6c00ff;
+            --deep-space: #0a0a18;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            background: var(--deep-space);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .cyber-border {
+            border: 2px solid;
+            border-image: linear-gradient(45deg, var(--neon-blue), var(--cyber-purple)) 1;
+            box-shadow: 0 0 15px var(--neon-blue);
+        }
+
+        .hero {
+            height: 80vh;
+            background: linear-gradient(135deg, #00172d 0%, #0a0a18 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 243, 255, 0.1) 2px,
+                rgba(0, 243, 255, 0.1) 4px
+            );
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .chip-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .chip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .rezrection-section {
+            background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M0 50 Q50 0 100 50" fill="%2300f3ff22"/></svg>');
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .code-block {
+            font-family: 'Courier New', monospace;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+            border-left: 3px solid var(--neon-blue);
+        }
+
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1 style="position: relative; z-index: 2; padding: 2rem;">
+            <span style="display: block; font-size: 3em; background: linear-gradient(to right, var(--neon-blue), var(--cyber-purple)); -webkit-background-clip: text; color: transparent;">NFS Technology</span>
+            <small style="font-size: 0.6em; opacity: 0.8;">Reshaping Human Existence Since 2023</small>
+        </h1>
+    </header>
+
+    <section class="product-grid">
+        <article class="cyber-border chip-card">
+            <h3>Cortex-X9 Pro</h3>
+            <ul>
+                <li>128核量子处理器</li>
+                <li>意念操控成功率99.3%</li>
+                <li>深度学习加速模式</li>
+            </ul>
+        
+        </article>
+
+        <article class="cyber-border chip-card">
+            <h3>BioLink Omega</h3>
+            <ul>
+                <li>纳米神经突触再生</li>
+                <li>触觉反馈＜0.7ms</li>
+                <li>脊髓接口协议5.0</li>
+            </ul>
+        
+        </article>
+    </section>
+
+    <section class="rezrection-section cyber-border">
+        <h2>Rezrection 智能生态舱</h2>
+        
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <div style="flex: 1; padding: 1rem; background: rgba(0,243,255,0.1);">
+                <h4>分子架构</h4>
+                <p>[智能表面] ↔ 自修复材料</p>
+            </div>
+            <div style="flex: 1; padding: 1rem; background: rgba(108,0,255,0.1);">
+                <h4>能量核心</h4>
+                <p>聚变电池组 (50年续航)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 在原有CSS中添加新样式 -->
+<style>
+    /* 新增时间轴样式 */
+    .timeline-container {
+        position: relative;
+        padding: 40px 0;
+    }
+
+    .timeline-line {
+        position: absolute;
+        left: 50%;
+        width: 4px;
+        background: linear-gradient(to bottom, var(--neon-blue), var(--cyber-purple));
+        height: 100%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: 45%;
+        padding: 20px;
+        margin: 30px 0;
+        position: relative;
+        background: rgba(255,255,255,0.05);
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 5%;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 50%;
+    }
+
+    /* 名人评价样式 */
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .testimonial-card {
+        border: 1px solid rgba(0,243,255,0.3);
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .testimonial-card::before {
+        content: "“";
+        font-size: 4em;
+        position: absolute;
+        top: -20px;
+        left: 10px;
+        color: var(--neon-blue);
+        opacity: 0.5;
+    }
+</style>
+
+<!-- 技术演进部分升级 -->
+<section style="padding: 3rem;">
+    <h2>技术演进</h2>
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item cyber-border">
+            <h4>2023 - 神经接口1.0</h4>
+            <p>• 首款非植入式脑机接口通过FDA认证<br>
+               • 实现基础意念控制功能</p>
+        </div>
+
+        <div class="timeline-item cyber-border">
+            <h4>2028 - 安全协议革命</h4>
+            <p>• 推出QuantumLock量子加密技术<br>
+               • 与NASA合作开发太空级防护标准</p>
+        </div>
+
+        <div class="timeline-item cyber-border">
+            <h4>2032 - 生物融合突破</h4>
+            <p>• 首个人工肾脏芯片实现永久免排斥<br>
+               • 获诺贝尔医学奖特别贡献奖</p> 
+        </div>
+
+        <div class="timeline-item cyber-border">
+            <h4>2035 - 意识云计划</h4>
+            <p>• 成功完成72小时离体意识存储<br>
+               • 引发全球AI伦理大讨论</p>
+        </div>
+    </div>
+</section>
+
+<!-- 新增名人评价模块 -->
+<section class="testimonial-grid">
+    <div class="testimonial-card">
+        <h4>"重新定义了人类的可能性"</h4>
+        <p>埃隆·马斯克<br>
+        <em>Neuralink创始人</em><br>
+        《科技未来》专访</p>
+    </div>
+
+    <div class="testimonial-card">
+        <h4>"医疗史上最伟大的跨越"</h4>
+        <p>陈薇院士<br>
+        <em>中国工程院</em><br>
+        世界医疗峰会主题演讲</p>
+    </div>
+
+    <div class="testimonial-card">
+        <h4>"危险的美丽新世界"</h4>
+        <p>尤瓦尔·赫拉利<br> 
+        <em>《人类简史》作者</em><br>
+        TEDxTokyo 闭幕致辞</p>
+    </div>
+</section>
+<!-- 在CSS部分新增样式 -->
+<style>
+    /* 产品配置器 */
+    .configurator {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .config-preview {
+        position: sticky;
+        top: 20px;
+        height: 500px;
+        background: rgba(255,255,255,0.05);
+        border: 2px solid var(--neon-blue);
+    }
+
+    .option-group {
+        margin-bottom: 2rem;
+    }
+
+    .chip-option {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        background: rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .chip-option:hover {
+        background: var(--cyber-purple);
+        box-shadow: 0 0 10px var(--neon-blue);
+    }
+
+    .chip-option.active {
+        border-left: 4px solid var(--neon-blue);
+    }
+
+    /* 购物车 */
+    .cart-icon {
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        cursor: pointer;
+        padding: 1rem;
+        background: rgba(0,243,255,0.1);
+    }
+
+    .cart-modal {
+        position: fixed;
+        top: 70px;
+        right: -400px;
+        width: 380px;
+        background: var(--deep-space);
+        padding: 1.5rem;
+        transition: right 0.3s;
+    }
+
+    .cart-modal.active {
+        right: 20px;
+    }
+</style>
+
+<!-- 在<body>末尾添加购物车 -->
+<div class="cart-icon cyber-border" onclick="toggleCart()">
+    🛒 <span id="cartCount">0</span>
+</div>
+
+<div class="cart-modal cyber-border" id="cartModal">
+    <h3>神经植入物购物车</h3>
+    <div id="cartItems"></div>
+    <hr style="margin: 1rem 0; border-color: #555;">
+    <div style="display: flex; justify-content: space-between;">
+        <strong>总价:</strong>
+        <span id="cartTotal">0.00</span> NFS积分
+    </div>
+</div>
+
+<!-- 产品配置器模块 -->
+<section class="configurator">
+    <div class="config-options">
+        <h2>芯片定制系统</h2>
+        
+        <div class="option-group">
+            <h4>选择芯片类型</h4>
+            <div class="chip-option active" onclick="selectChip(this, 'cortex-x9')">
+                <span>Cortex-X9 Pro</span>
+                <span>▲ 4,999积分</span>
+            </div>
+            <div class="chip-option" onclick="selectChip(this, 'biolink-omega')">
+                <span>BioLink Omega</span>
+                <span>▲ 8,999积分</span>
+            </div>
+        </div>
+
+        <div class="option-group">
+            <h4>生物兼容涂层</h4>
+            <div class="chip-option" onclick="toggleOption(this, 'nano-coating')">
+                <span>纳米自修复涂层</span>
+                <span>+999积分</span>
+            </div>
+            <div class="chip-option" onclick="toggleOption(this, 'immune-plus')">
+                <span>免疫增强涂层</span>
+                <span>+1,599积分</span>
+            </div>
+        </div>
+
+        <div class="option-group">
+            <h4>神经接口类型</h4>
+            <div class="chip-option" onclick="toggleOption(this, 'quantum-link')">
+                <span>量子纠缠接口</span>
+                <span>+2,999积分</span>
+            </div>
+            <div class="chip-option" onclick="toggleOption(this, 'bio-sync')">
+                <span>生物节律同步</span>
+                <span>+1,299积分</span>
+            </div>
+        </div>
+
+        <button class="cyber-border" style="padding: 1rem; width: 100%;" 
+                onclick="addToCart()">
+            加入神经整合方案
+        </button>
+    </div>
+
+    <div class="config-preview cyber-border">
+        <!-- 3D预览区 -->
+        <div id="chipPreview" style="position: relative; height: 100%;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                ▲▲▲
+                <p style="text-align: center;">实时芯片全息投影区</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // 购物车数据
+    let cart = [];
+    let currentConfig = {
+        base: 'cortex-x9',
+        options: [],
+        price: 4999
+    };
+
+    // 芯片选择
+    function selectChip(element, chipType) {
+        document.querySelectorAll('.chip-option').forEach(opt => 
+            opt.classList.remove('active'));
+        element.classList.add('active');
+        
+        currentConfig.base = chipType;
+        currentConfig.price = chipType === 'cortex-x9' ? 4999 : 8999;
+        updatePrice();
+    }
+
+    // 选项切换
+    function toggleOption(element, option) {
+        element.classList.toggle('active');
+        const index = currentConfig.options.indexOf(option);
+        if(index === -1) {
+            currentConfig.options.push(option);
+        } else {
+            currentConfig.options.splice(index, 1);
+        }
+        updatePrice();
+    }
+
+    // 价格计算
+    function updatePrice() {
+        let total = currentConfig.price;
+        document.querySelectorAll('.chip-option:not(.active)').forEach(opt => {
+            if(opt.textContent.includes('+')) {
+                total += parseInt(opt.textContent.match(/\d+/)[0]);
+            }
+        });
+        document.querySelector('button').textContent = 
+            `加入神经整合方案 ▲ ${total} 积分`;
+    }
+
+    // 购物车功能
+    function addToCart() {
+        cart.push({...currentConfig});
+        updateCartDisplay();
+    }
+
+    function toggleCart() {
+        document.getElementById('cartModal').classList.toggle('active');
+    }
+
+    function updateCartDisplay() {
+        document.getElementById('cartCount').textContent = cart.length;
+        const cartItems = document.getElementById('cartItems');
+        const total = cart.reduce((sum, item) => sum + item.price, 0);
+        
+        cartItems.innerHTML = cart.map((item, index) => `
+            <div style="margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between;">
+                    <span>${item.base.toUpperCase()}</span>
+                    <span>${item.price} 积分</span>
+                </div>
+                <small style="color: #888;">包含: ${item.options.join(', ')}</small>
+            </div>
+        `).join('');
+        
+        document.getElementById('cartTotal').textContent = total;
+    }
+</script>
+</body>
+</html>
